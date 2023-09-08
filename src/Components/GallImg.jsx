@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 import foto2 from "../img/foto2.jpg";
 import foto3 from "../img/foto3.jpg";
@@ -35,8 +34,8 @@ export const GallImg = () => {
   return (
     <div className="gallimg">
       <div className="imgContainer"> 
-        {IMG_LIST.map((element) => (
-          <ImgElement key={element.name} {...element}/>
+        {IMG_LIST.map((element, index) => (
+          <ImgElement key={element.name} {...element} index = {index}/>
         ))}
       </div>
     </div>
