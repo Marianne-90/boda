@@ -20,6 +20,14 @@ font-family: 'Neuton', serif;*/
   overflow-x: hidden;
 }
 
+.mainContainer{
+  background-image: url('./img/textura.jpg');
+  background-size: cover; /* Para que la imagen cubra todo el fondo */
+  background-repeat: no-repeat; /*Evita la repetición de la imagen*/
+   background-attachment: fixed; /*Fija la imagen en su posición */
+  background-position: center top; /* Centra la imagen de fondo */
+}
+
 .maxymarianne{
   background-image: url('./img/foto1.jpeg');
   background-size: cover; /* Para que la imagen cubra todo el fondo */
@@ -57,7 +65,7 @@ font-family: 'Neuton', serif;*/
 position: absolute;
 text-align: center;
 z-index: 2;
-font-size: 16px;
+font-size: 1rem;
 }
 
 .maxymarianne .content .text .boda{
@@ -91,8 +99,8 @@ font-size: 16px;
 }
 
 .gallimg .imgContainer > div{
-  width: 420px;
-  height: 420px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -108,7 +116,7 @@ font-size: 16px;
 .gallimg .imgContainer > div .hover {
   position: absolute;
   background-color: var(--dark);
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
   text-align: center;
   font-family: 'Monsieur La Doulaise', cursive;
