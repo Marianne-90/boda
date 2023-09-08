@@ -1,25 +1,42 @@
+import { useState } from "react";
+
 import foto2 from "../img/foto2.jpg";
 import foto3 from "../img/foto3.jpg";
+import foto5 from "../img/foto5.jpg";
+import foto6 from "../img/foto6.jpg";
+import foto7 from "../img/foto7.jpg";
+import { ImgElement } from "./ImgElement";
+
 
 const IMG_LIST = [
   {
-    name: "foto en el lago",
+    name: "La vida contigo es una Poesía",
     img: foto2,
   },
   {
-    name: "foto besito frente",
+    name: "Nuestro primer para Siempre",
     img: foto3,
+  },
+  {
+    name: "Concierto de Nightwish",
+    img: foto5,
+  },
+  {
+    name: "Todos los días son una Aventura",
+    img: foto6,
+  },
+  {
+    name: "Soñando Despiertos",
+    img: foto7,
   },
 ];
 
 export const GallImg = () => {
   return (
     <div className="gallimg">
-      <div className="imgContainer">
+      <div className="imgContainer"> 
         {IMG_LIST.map((element) => (
-          <div key={element.name}>
-            <img src={element.img} alt={element.name} />
-          </div>
+          <ImgElement key={element.name} {...element}/>
         ))}
       </div>
     </div>

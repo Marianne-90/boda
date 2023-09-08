@@ -5,7 +5,7 @@
 font-family: 'Neuton', serif;*/
 
 :root{
-    --brown:rgb(66, 50, 31);
+    --brown:rgb(102, 84, 5);
     --dark:#111827;
     --white:#F3F4F6;
     font-family: 'Neuton', serif;
@@ -81,7 +81,72 @@ font-size: 16px;
   width: 40%;
 }
 
+.gallimg .imgContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px;
+}
 
+.gallimg .imgContainer > div{
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallimg .imgContainer > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.gallimg .imgContainer > div .hover {
+  position: absolute;
+  background-color: var(--dark);
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-family: 'Monsieur La Doulaise', cursive;
+  color: var(--white);
+  z-index: 2;
+  top:0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+  cursor: pointer;
+  padding: 30px;
+}
+
+.gallimg .imgContainer > div:nth-child(odd) .hover {
+  background-color: var(--brown);
+}
+
+.gallimg .imgContainer > div .hover p {
+  overflow: visible;
+}
+
+.gallimg .imgContainer > div .opacity{
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallimg .imgContainer > div{
+    width: 100vw;
+    height: calc(100vw - 60px);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+}
 
 
 @media only screen and (max-width: 400px) {
