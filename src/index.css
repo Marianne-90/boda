@@ -132,12 +132,12 @@ font-family: 'Neuton', serif;*/
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity .1s ease;
   cursor: pointer;
   padding: 30px;
 }
 
-.gallimg .imgContainer .circle:nth-child(odd) .hover {
+.gallimg .imgContainer .brownBg .hover{
   background-color: var(--brownOp);
 }
 
@@ -145,7 +145,7 @@ font-family: 'Neuton', serif;*/
   overflow: visible;
 }
 
-.gallimg .imgContainer .circle .opacity {
+.gallimg .imgContainer .circle .opacityImg {
   opacity: 1;
 }
 

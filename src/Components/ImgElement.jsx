@@ -18,18 +18,18 @@ export const ImgElement = ({ name, img, index }) => {
   };
 
 
-  const handleAnimation = (index) => {
+  const handleOddOrEven = (index) => {
     if (index % 2) {
-      return state && "slide-top-text";
+      return state && "slide-top-text brownBg";
     }
     return state && "slide-bottom-text";
   };
 
   return (
     <ScrollTrigger onEnter={onEnterViewport} >
-      <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`circle ${handleAnimation(index)}`}>
+      <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`circle ${handleOddOrEven(index)}`}>
         <img src={img} alt={name} />
-        <div className={`hover ${hovered ? "opacity" : ""}`}>
+        <div className={`hover ${hovered ? "opacityImg" : ""}`}>
           <p className="texto">{name}</p>
         </div>
       </div>
