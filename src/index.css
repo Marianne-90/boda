@@ -175,6 +175,7 @@ font-family: 'Neuton', serif;*/
   flex-wrap: wrap;
   gap: 30px;
   overflow: visible;
+  padding: 0 30px;
 }
 
 .eventos .eventoContainer {
@@ -217,6 +218,29 @@ font-family: 'Neuton', serif;*/
 
 .eventos .eventoContainer .buttons span:nth-child(2) {
   margin-left: 5px;
+}
+
+
+.eventos  .nota {
+  font-weight: 200;
+  color: var(--brown);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.eventos  .transmision{
+  background-color: var(--dark);
+  display: block;
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
