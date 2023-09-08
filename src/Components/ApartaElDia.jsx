@@ -1,3 +1,5 @@
+import linea from "../img/linea.png"
+
 export const ApartaElDia = () => {
   return (
     <div className="apartaeldia">
@@ -8,6 +10,7 @@ export const ApartaElDia = () => {
         sea aún más significativo y especial para nosotros. ¡Esperamos verte
         allí para celebrar juntos el inicio de nuestra nueva vida como esposos!
       </p>
+      <img src={linea} alt="liena" />
     </div>
   );
 };

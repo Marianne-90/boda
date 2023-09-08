@@ -7,7 +7,7 @@ const EVENTOS = [
     title: "Misa",
     direction: "Dirección: C. 6 Sur 2, 74365 Veracruz, Pue.",
     enlace: "",
-    horario: "12:00pm",
+    horario: "12:00 pm",
   },
   {
     title: "Festejo",
@@ -18,7 +18,7 @@ const EVENTOS = [
 ];
 
 export const Eventos = () => {
-  return <div className="Eventos">
+  return <div className="eventos">
     {
         EVENTOS.map((element, index )=> <Evento key={index} {...element}/>)
     }

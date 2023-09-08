@@ -1,35 +1,36 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Neuton:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Neuton:wght@200;400;700&display=swap");
 
 /*font-family: 'Monsieur La Doulaise', cursive;
 font-family: 'Neuton', serif;*/
 
-:root{
-    --brown:rgb(102, 84, 5);
-    --dark:#111827;
-    --white:#F3F4F6;
-    font-family: 'Neuton', serif;
-    background-color: var(--white);
-    color: var(--dark);
+:root {
+  --brown: rgb(102, 84, 5);
+  --brownOp: rgba(102, 84, 5, 0.623);
+  --dark: #111827;
+  --darkOp: #111827ae;
+  --white: #f3f4f6;
+  font-family: "Neuton", serif;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-.mainContainer{
-  background-image: url('./img/textura.jpg');
+.mainContainer {
+  background-image: url("./img/textura.jpg");
   background-size: cover; /* Para que la imagen cubra todo el fondo */
   background-repeat: no-repeat; /*Evita la repetición de la imagen*/
-   background-attachment: fixed; /*Fija la imagen en su posición */
+  background-attachment: fixed; /*Fija la imagen en su posición */
   background-position: center top; /* Centra la imagen de fondo */
 }
 
-.maxymarianne{
-  background-image: url('./img/foto1.jpeg');
+.maxymarianne {
+  background-image: url("./img/foto1.jpeg");
   background-size: cover; /* Para que la imagen cubra todo el fondo */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
   background-attachment: fixed; /* Fija la imagen en su posición */
@@ -41,55 +42,54 @@ font-family: 'Neuton', serif;*/
   padding-bottom: 20px;
 }
 
-.maxymarianne .content{
+.maxymarianne .content {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.maxymarianne .content .circulo{
+.maxymarianne .content .circulo {
   width: 420px;
   height: 420px;
   overflow: hidden;
 }
 
-.maxymarianne .content .circulo img{
+.maxymarianne .content .circulo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-.maxymarianne .content .text{
-position: absolute;
-text-align: center;
-z-index: 2;
-font-size: 1rem;
+.maxymarianne .content .text {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  font-size: 1rem;
 }
 
-.maxymarianne .content .text .boda{
-  font-family: 'Monsieur La Doulaise', cursive;
+.maxymarianne .content .text .boda {
+  font-family: "Monsieur La Doulaise", cursive;
   font-size: 3em;
-
 }
 
-.maxymarianne .content .text .name{
+.maxymarianne .content .text .name {
   font-size: 3em;
   color: var(--brown);
   font-weight: 200;
   text-transform: uppercase;
 }
 
-.maxymarianne .content .text .date{
+.maxymarianne .content .text .date {
   font-size: 1.4em;
 }
 
-.maxymarianne .content .text img{
+.maxymarianne .content .text img {
   width: 40%;
 }
 
-.gallimg .imgContainer{
+.gallimg .imgContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +98,7 @@ font-size: 1rem;
   margin: 30px;
 }
 
-.gallimg .imgContainer > div{
+.gallimg .imgContainer > div {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -112,17 +112,16 @@ font-size: 1rem;
   object-fit: cover;
 }
 
-
 .gallimg .imgContainer > div .hover {
   position: absolute;
-  background-color: var(--dark);
+  background-color: var(--darkOp);
   font-size: 2.5rem;
   line-height: 3rem;
   text-align: center;
-  font-family: 'Monsieur La Doulaise', cursive;
+  font-family: "Monsieur La Doulaise", cursive;
   color: var(--white);
   z-index: 2;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -135,35 +134,107 @@ font-size: 1rem;
 }
 
 .gallimg .imgContainer > div:nth-child(odd) .hover {
-  background-color: var(--brown);
+  background-color: var(--brownOp);
 }
 
 .gallimg .imgContainer > div .hover p {
   overflow: visible;
 }
 
-.gallimg .imgContainer > div .opacity{
+.gallimg .imgContainer > div .opacity {
   opacity: 1;
 }
 
+.apartaeldia {
+  text-align: center;
+  margin: 30px;
+}
+
+.apartaeldia h2 {
+  text-transform: uppercase;
+  color: var(--brown);
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.apartaeldia p {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.apartaeldia img {
+  margin-top: 30px;
+  width: 200px;
+  opacity: 0.7;
+}
+
+.eventos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow: visible;
+}
+
+.eventos .eventoContainer {
+  text-align: center;
+  padding: 0 30px;
+  overflow: visible;
+}
+
+.eventos .eventoContainer .title {
+  color: var(--brown);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.eventos .eventoContainer .direction {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.eventos .eventoContainer .buttons {
+  overflow: visible;
+  margin-top: 20px;
+}
+.eventos .eventoContainer .buttons span {
+  background-color: var(--brown);
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: 10px;
+  font-weight: 200;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.eventos .eventoContainer .buttons a {
+  color: var(--white);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.eventos .eventoContainer .buttons span:nth-child(2) {
+  margin-left: 5px;
+}
+
 @media only screen and (max-width: 600px) {
-  .gallimg .imgContainer > div{
+  .gallimg .imgContainer > div {
     width: 100vw;
     height: calc(100vw - 60px);
     border-radius: 50%;
     overflow: hidden;
   }
-
 }
 
-
 @media only screen and (max-width: 400px) {
-  .maxymarianne .content .text{
-    font-size: .9rem
-    }
-    .maxymarianne .content .circulo{
-      width: 330px;
-      height: 330px;
-      overflow: hidden;
-    }
+  .maxymarianne .content .text {
+    font-size: 0.9rem;
+  }
+  .maxymarianne .content .circulo {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+  }
 }
