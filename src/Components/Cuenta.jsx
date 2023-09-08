@@ -37,18 +37,22 @@ export const Cuenta = () => {
   }, [time]);
 
   return (
-    <div>
-      <div>
-        <span>{time.days}</span> días
-      </div>
-      <div>
-        <span>{time.hours}</span> horas
-      </div>
-      <div>
-        <span>{time.minutes}</span> minutos
-      </div>
-      <div>
-        <span>{time.seconds}</span> segundos
+    <div className="cuenta">
+      <h2>Faltan</h2>
+      <div className="container">
+        <div>
+          <span>{time.days}</span>
+          <span>Días</span>
+        </div>
+        <div>
+          <span>{time.hours}</span> <span>Horas</span>
+        </div>
+        <div>
+          <span>{time.minutes}</span> <span>Mins</span>
+        </div>
+        <div>
+          <span>{time.seconds}</span> <span>Segs</span>
+        </div>
       </div>
     </div>
   );

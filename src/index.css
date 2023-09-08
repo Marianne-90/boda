@@ -207,6 +207,7 @@ font-family: 'Neuton', serif;*/
   font-weight: 200;
   border-radius: 5px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .eventos .eventoContainer .buttons a {
@@ -220,15 +221,14 @@ font-family: 'Neuton', serif;*/
   margin-left: 5px;
 }
 
-
-.eventos  .nota {
+.eventos .nota {
   font-weight: 200;
   color: var(--brown);
   font-size: 1.2rem;
   text-align: center;
 }
 
-.eventos  .transmision{
+.eventos .transmision {
   background-color: var(--dark);
   display: block;
   color: var(--white);
@@ -243,6 +243,78 @@ font-family: 'Neuton', serif;*/
   text-decoration: none;
 }
 
+.cuenta {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+  text-transform: uppercase;
+}
+
+.cuenta h2 {
+  font-size: 2rem;
+  color: var(--brown);
+  font-weight: 200;
+}
+
+.cuenta .container {
+  border-top: var(--brown) 1px solid;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+  width: 500px;
+  font-size: 1rem;
+}
+
+.cuenta div span {
+  display: block;
+  text-align: center;
+  color: var(--brown);
+}
+
+.cuenta div span:nth-child(1) {
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.carta {
+    background-image: linear-gradient(
+      to bottom,
+      var(--darkOp),
+      var(--darkOp)
+    ),
+    url("./img/foto4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  padding: 30px 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--white);
+}
+
+
+
+
+.carta h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.carta p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
 @media only screen and (max-width: 600px) {
   .gallimg .imgContainer > div {
     width: 100vw;
@@ -250,6 +322,11 @@ font-family: 'Neuton', serif;*/
     border-radius: 50%;
     overflow: hidden;
   }
+
+  .carta {
+  padding: 30px 50px;
+}
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -260,5 +337,14 @@ font-family: 'Neuton', serif;*/
     width: 330px;
     height: 330px;
     overflow: hidden;
+  }
+
+  .carta {
+    padding: 30px 20px;
+  }
+
+  .cuenta .container {
+    width: 100%;
+    font-size: 0.8rem;
   }
 }
