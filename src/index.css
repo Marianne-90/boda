@@ -226,6 +226,7 @@ font-family: 'Neuton', serif;*/
   color: var(--brown);
   font-size: 1.2rem;
   text-align: center;
+  width: 100%;
 }
 
 .eventos .transmision {
@@ -347,4 +348,46 @@ font-family: 'Neuton', serif;*/
     width: 100%;
     font-size: 0.8rem;
   }
+}
+
+
+/* Para WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:var(--black);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--softGrey);
+  border-radius: 10px;
+}
+
+/* Para Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color:var(--black);
+}
+
+/* Para scrollbar personalizado en Firefox */
+body::-moz-scrollbar {
+  width: 10px;
+}
+
+/* Para navegadores basados en WebKit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-moz-scrollbar-thumb {
+  background-color: var(--black);
+  border-radius: 10px;
+}
+
+body::-moz-scrollbar-track {
+  background-color: var(--softGrey);
+  border-radius: 10px;
 }
