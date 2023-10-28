@@ -3,7 +3,7 @@ import { Evento } from "./Evento";
 const EVENTOS = [
   {
     title: "Misa",
-    direction: "Parroquia de la Santísima Trinidad Tepango - Dirección: C. 6 Sur 2, 74365 Veracruz, Pue.",
+    direction: "Parroquia de la Santísima Trinidad Tepango - Dirección: C. 6 Sur 2, 74365 calle Veracruz, Atlixo Pue.",
     enlace: "https://www.google.com/maps/dir/19.1057847,-98.3417014/iglesia+de+las+santisima+trinidad+de+tepango+atlixco/@18.9833603,-98.5186449,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x85cfb306e87402a7:0x39439634df87bad4!2m2!1d-98.4435444!2d18.8606938?entry=ttu",
     horario: "12:00 pm",
   },
