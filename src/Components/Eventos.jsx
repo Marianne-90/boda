@@ -26,7 +26,7 @@ export const Eventos = () => {
       </p>
       <a
         className="transmision"
-        href="https://discord.gg/sh3kcZaV"
+        href="https://discord.gg/hyX2CA3v"
         target="blank"
       >
         Ver Transmisión
