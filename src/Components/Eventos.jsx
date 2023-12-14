@@ -22,7 +22,7 @@ export const Eventos = () => {
         <Evento key={index} {...element} index={index} />
       ))}
       <p className="nota">
-        (Argentina restar 3 horas el evento comienza a las 9 am)
+        (Argentina sumar 3 horas el evento comienza a las 15:00)
       </p>
       <a
         className="transmision"
